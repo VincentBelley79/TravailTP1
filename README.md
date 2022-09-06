@@ -1,1 +1,1 @@
-# 420-376-FE---TP1-Galdiateurs
+# 420-376-FE---TP1-Gladiateurs
