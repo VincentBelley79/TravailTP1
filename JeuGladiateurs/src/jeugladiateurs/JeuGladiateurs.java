@@ -11,7 +11,7 @@ public class JeuGladiateurs {
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Instanciation des objets">
+    // <editor-fold defaultstate="expanded" desc="Instanciation des objets">
     CompteurDeTour tour = new CompteurDeTour();
     AffichageEcran affichage = new AffichageEcran();
     Personnage personnage1 = new Personnage();
