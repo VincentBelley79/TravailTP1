@@ -10,7 +10,6 @@ public class AffichageEcran {
     // <editor-fold defaultstate="collapsed" desc="Méthodes d'affichage">
     public void afficherDebutCombat() {
         // TODO : Afficher le message du début du combat, tel que montré dans l'énoncé
-        // Test github - Patrice
     }
     
     public void afficherSeparateurDeTour() {
