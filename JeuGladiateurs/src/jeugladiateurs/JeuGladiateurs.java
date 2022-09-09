@@ -14,8 +14,8 @@ public class JeuGladiateurs {
     // <editor-fold defaultstate="expanded" desc="Instanciation des objets">
     CompteurDeTour tour = new CompteurDeTour();
     AffichageEcran affichage = new AffichageEcran();
-    Personnage personnage1 = new Personnage();
-    Personnage personnage2 = new Personnage();
+    Personnage Bob = new Personnage();
+    Personnage Igor = new Personnage();
     // </editor-fold>
 
     // **************************************************************************
