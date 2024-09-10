@@ -18,7 +18,7 @@ public class Personnage {
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
-    public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
+    public Personnage(String nom, int pvs, int attaqueMax ,int defense, int ini) {
         this.nom = nom;
         this.attaqueMax = attaqueMax;
         this.defense = defense;
