@@ -2,22 +2,14 @@ package personnages;
 
 public class Personnage {
 
-    // **************************************************************************
-    // **************************************************************************
-    // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Attributs">
-    // TODO : Mettre vos attributs ici
-    // </editor-fold>
+   
     private string nom;
     private int pvs;
     private int attaqueMax;
     private int ini;
     private int defense;
 
-    // **************************************************************************
-    // **************************************************************************
-    // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
+    
     public Personnage(String nom, int pvs, int attaqueMax ,int defense, int ini) {
         this.nom = nom;
         this.attaqueMax = attaqueMax;
@@ -33,15 +25,47 @@ public class Personnage {
         ini = 0;
         pvs = 0;
     }
-    // </editor-fold>
 
-    // **************************************************************************
-    // **************************************************************************
-    // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Getters et setters">
-    // TODO : Les getters
-    // TODO : Les setters
-    // </editor-fold>
+    public string getNom() {
+        return nom;
+    }
+
+    public int getPvs() {
+        return pvs;
+    }
+
+    public int getAttaqueMax() {
+        return attaqueMax;
+    }
+
+    public int getIni() {
+        return ini;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setNom(string nom) {
+        this.nom = nom;
+    }
+
+    public void setPvs(int pvs) {
+        this.pvs = pvs;
+    }
+
+    public void setAttaqueMax(int attaqueMax) {
+        this.attaqueMax = attaqueMax;
+    }
+
+    public void setIni(int ini) {
+        this.ini = ini;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+    
 
     // **************************************************************************
     // **************************************************************************

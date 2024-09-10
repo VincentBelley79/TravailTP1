@@ -25,7 +25,13 @@ public class JeuGladiateurs {
     // TODO : Afficher les infos de chaque personnage
     // TODO : Afficher le message du début du combat
     // </editor-fold>
-
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
