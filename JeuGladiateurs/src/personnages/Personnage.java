@@ -3,7 +3,7 @@ package personnages;
 public class Personnage {
 
    
-    private string nom;
+    private String nom;
     private int pvs;
     private int attaqueMax;
     private int ini;
@@ -26,7 +26,7 @@ public class Personnage {
         pvs = 0;
     }
 
-    public string getNom() {
+    public String getNom() {
         return nom;
     }
 
@@ -46,7 +46,7 @@ public class Personnage {
         return defense;
     }
 
-    public void setNom(string nom) {
+    public void setNom(String nom) {
         this.nom = nom;
     }
 
@@ -72,6 +72,7 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
+        System.out.println("");
         System.out.println(nom);
         System.out.println("      Attaque : " + attaqueMax);
         System.out.println("      Défense : " + defense);
