@@ -29,7 +29,7 @@ public class JeuGladiateurs {
    Igor.afficherInfosPersonnage();
    affichage.afficherDebutCombat();
    
-   System.out.println("Attaque du personnage #1 = " + Bob.attaqueCalcul());
+   
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************

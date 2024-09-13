@@ -75,7 +75,7 @@ public class Personnage {
         System.out.println("");
         System.out.println(nom);
         System.out.println("      Attaque : " + attaqueMax);
-        System.out.println("      Défense : " + defense);
+        System.out.println("      D�fense : " + defense);
         System.out.println("      Points de vie : " + pvs);
         System.out.println("      Initiative :" + ini);
         if(pvs > 0)
@@ -89,15 +89,22 @@ public class Personnage {
         
     }
 
-    public int attaqueCalcul() {
+    private int attaqueCalcul() {
         int attaque = (int)(Math.random() * attaqueMax);
         return attaque;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
-        // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
-        //modifier les points de vie du personnage cible, afficher les détails
-        // sur l'attaque, tel que montré dans l'énoncé.
+        int forceDeFrappe = attaqueCalcul();
+        int valeurDefense = personnageCible.defense;
+        int dommages = forceDeFrappe - valeurDefense;
+        if(dommages < 0) dommages = 0;
+        personnageCible.pvs -= dommages;
+        if(personnageCible.pvs < 0) personnageCible.pvs = 0;
+        System.out.println("");
+        System.out.println(nom + " attaque avec une puissance de : " + forceDeFrappe);
+        System.out.println(personnageCible.nom + " a une d�fense de : " + valeurDefense);
+        System.out.println("Les dommages sont donc de : " + dommages);
     }
 
     public void setNewInitiativeRandom() {
