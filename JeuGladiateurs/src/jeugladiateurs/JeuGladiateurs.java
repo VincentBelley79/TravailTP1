@@ -37,7 +37,7 @@ public class JeuGladiateurs {
         do {
             tour.afficheTour();
 
-            affichage.afficherDebutCombat();
+            
 
             for (int i = 0; i <= 100; i++) {
                 if (i == Bob.getIni() && Bob.getPvs() > 0) {
