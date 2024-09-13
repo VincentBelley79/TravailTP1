@@ -34,6 +34,7 @@ public class Rétiaire extends Personnage{
     @Override
     public void frapperPersonnage(Personnage personnageCible) {
         int attrape = (int)(Math.random() * 10);
+        System.out.println("");
         if(filet == true)
         {
             System.out.println(getNom() + " lance son filet");
