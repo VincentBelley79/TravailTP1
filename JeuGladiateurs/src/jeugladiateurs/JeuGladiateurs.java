@@ -30,6 +30,10 @@ public class JeuGladiateurs {
    affichage.afficherDebutCombat();
    
    
+   Bob.afficherInfosPersonnage();
+   Bob.setNewInitiativeRandom();
+   Bob.afficherInfosPersonnage();
+   
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
