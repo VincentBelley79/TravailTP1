@@ -29,7 +29,18 @@ public class AffichageEcran {
     }
 
     public void afficheVictoire(Personnage personnage1, Personnage personnage2) {
-        // TODO : Afficher le gagnant du combat, tel que montré dans l'énoncé
+        String gagnant = "personne";
+        if(personnage1.getPvs() > 0)
+        {
+           gagnant = personnage1.getNom(); 
+        }
+        if(personnage2.getPvs() > 0)
+        {
+           gagnant = personnage2.getNom(); 
+        }
+        System.out.println(""); 
+        System.out.println(gagnant + " gagne le combat !!!"); 
+        System.out.println(""); 
     }
     // </editor-fold>
 }
