@@ -7,9 +7,8 @@ public class CompteurDeTour {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Attributs">
     private int cptrTour;
-    
+
     // </editor-fold>
-    
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
@@ -41,10 +40,10 @@ public class CompteurDeTour {
     }
 
     public void afficheTour() {
-        System.out.println("----------------"); 
-        System.out.println("Tour Actuel : " + cptrTour); 
-        System.out.println("----------------"); 
-        
+        System.out.println("----------------");
+        System.out.println("Tour Actuel : " + cptrTour);
+        System.out.println("----------------");
+
     }
     // </editor-fold>
 }

@@ -2,15 +2,13 @@ package personnages;
 
 public class Personnage {
 
-   
     private String nom;
     private int pvs;
     private int attaqueMax;
     private int ini;
     private int defense;
 
-    
-    public Personnage(String nom, int pvs, int attaqueMax ,int defense, int ini) {
+    public Personnage(String nom, int pvs, int attaqueMax, int defense, int ini) {
         this.nom = nom;
         this.attaqueMax = attaqueMax;
         this.defense = defense;
@@ -65,7 +63,6 @@ public class Personnage {
     public void setDefense(int defense) {
         this.defense = defense;
     }
-    
 
     // **************************************************************************
     // **************************************************************************
@@ -78,19 +75,16 @@ public class Personnage {
         System.out.println("      Défense : " + defense);
         System.out.println("      Points de vie : " + pvs);
         System.out.println("      Initiative :" + ini);
-        if(pvs > 0)
-        {
-           System.out.println("      Statut : Vivant"); 
+        if (pvs > 0) {
+            System.out.println("      Statut : Vivant");
+        } else {
+            System.out.println("      Statut : Mort");
         }
-        else{
-           System.out.println("      Statut : Mort"); 
-        }
-        
-        
+
     }
 
     private int attaqueCalcul() {
-        int attaque = (int)(Math.random() * attaqueMax);
+        int attaque = (int) (Math.random() * attaqueMax);
         return attaque;
     }
 
@@ -98,11 +92,11 @@ public class Personnage {
         int forceDeFrappe = attaqueCalcul();
         int valeurDefense = personnageCible.defense;
         int dommages = forceDeFrappe - valeurDefense;
-        if(dommages < 0) {
+        if (dommages < 0) {
             dommages = 0;
         }
         personnageCible.pvs -= dommages;
-        if(personnageCible.pvs < 0) {
+        if (personnageCible.pvs < 0) {
             personnageCible.pvs = 0;
         }
         System.out.println("");
@@ -112,7 +106,7 @@ public class Personnage {
     }
 
     public void setNewInitiativeRandom() {
-        ini = (int)(Math.random() * 100);
+        ini = (int) (Math.random() * 100);
     }
     // </editor-fold>
 }
