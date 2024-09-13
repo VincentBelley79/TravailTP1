@@ -98,9 +98,13 @@ public class Personnage {
         int forceDeFrappe = attaqueCalcul();
         int valeurDefense = personnageCible.defense;
         int dommages = forceDeFrappe - valeurDefense;
-        if(dommages < 0) dommages = 0;
+        if(dommages < 0) {
+            dommages = 0;
+        }
         personnageCible.pvs -= dommages;
-        if(personnageCible.pvs < 0) personnageCible.pvs = 0;
+        if(personnageCible.pvs < 0) {
+            personnageCible.pvs = 0;
+        }
         System.out.println("");
         System.out.println(nom + " attaque avec une puissance de : " + forceDeFrappe);
         System.out.println(personnageCible.nom + " a une défense de : " + valeurDefense);
