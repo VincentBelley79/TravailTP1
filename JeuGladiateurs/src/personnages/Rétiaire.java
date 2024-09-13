@@ -33,10 +33,28 @@ public class Rétiaire extends Personnage{
     }
     @Override
     public void frapperPersonnage(Personnage personnageCible) {
+        int attrape = (int)(Math.random() * 10);
         if(filet == true)
         {
-            System.out.println("");
+            System.out.println(getNom() + " lance son filet");
+            if(attrape == 1)
+            {
+                personnageCible.setPvs(0);
+                System.out.println("Son filet attrape " + personnageCible.getNom() + " et il l'empale sauvagement avec sa lance.");
+            }
+            else
+            {
+                System.out.println("Le filet n'atteint pas sa cible");
+                filet = false;
+            }
         }
+        else
+        {
+            filet = true;
+            System.out.println(getNom() + " ramasse son filet et en profite pour attaquer");
+            super.frapperPersonnage(personnageCible);
+        }
+        
         
     }
 }
