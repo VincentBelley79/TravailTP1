@@ -89,7 +89,7 @@ public class Personnage {
         
     }
 
-    private int attaqueCalcul() {
+    public int attaqueCalcul() {
         int attaque = (int)(Math.random() * attaqueMax);
         return attaque;
     }
